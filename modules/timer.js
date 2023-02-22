@@ -1,7 +1,7 @@
-import { DateTime } from "./luxon/src/luxon.js";
+import { DateTime } from './luxon/src/luxon.js';
 
-export let time = () => {
-  const Date = document.querySelector(".time");
+const time = () => {
+  const Date = document.querySelector('.time');
   Date.textContent = DateTime.now().toLocaleString({
     hour12: false,
     year: 'numeric',
@@ -11,4 +11,6 @@ export let time = () => {
     minute: '2-digit',
     second: '2-digit',
   });
-}
+};
+
+export default time;

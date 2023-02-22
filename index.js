@@ -1,7 +1,6 @@
-import displayLibrary from "./modules/display.js";
-import {time} from "./modules/timer.js"
+import displayLibrary from './modules/display.js';
+import time from './modules/timer.js';
 
-const books = document.querySelector('.books');
 const addBookButton = document.getElementById('submit');
 const bookTitle = document.getElementById('title');
 const bookAuthor = document.getElementById('author');
@@ -84,6 +83,5 @@ contactLink.addEventListener('click', () => {
   addLink.classList.remove('active');
   contactLink.classList.add('active');
 });
-
 
 setInterval(time, 1000);

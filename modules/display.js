@@ -1,12 +1,11 @@
-import addBook from "./addBook.js";
-
+import addBook from './addBook.js';
 
 const books = document.querySelector('.books');
 
 const removeBook = (book) => {
-    book.remove();
-  };
-  
+  book.remove();
+};
+
 const displayLibrary = (library) => {
   books.innerHTML = '';
   for (let i = 0; i < library.length; i += 1) {
